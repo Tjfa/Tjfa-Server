@@ -1,0 +1,15 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: CZM -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+        
+    <package name="default" namespace="/" extends="struts-default">
+        
+    </package>
+</struts>
