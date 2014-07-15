@@ -29,5 +29,7 @@ public class CompetitionAction extends ActionSupport implements SessionAware,Ser
     public void setServletRequest(HttpServletRequest request) {
         this.request=request;
     }
-    
+  public String list(){
+    return "list";
+    }    
 }

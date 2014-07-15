@@ -29,5 +29,7 @@ public class NewsAction extends ActionSupport implements SessionAware,ServletReq
     public void setServletRequest(HttpServletRequest request) {
         this.request=request;
     }
-    
+      public String list(){
+    return "list";
+    }
 }

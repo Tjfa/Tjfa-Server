@@ -10,6 +10,36 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="true" />
         
     <package name="default" namespace="/" extends="struts-default">
-        
+       <action name="player_*" class="Action.PlayerAction" method="{1}">
+            <result name="editsuccess">
+                /editsuccess.jsp
+            </result>
+            <result name="list">
+                /player.jsp
+            </result>
+        </action>
+        <action name="competition_*" class="Action.CompetitionAction" method="{1}">
+            <result name="list">
+                /competition.jsp
+            </result>
+        </action>
+         <action name="match_*" class="Action.MatchAction" method="{1}">
+            <result name="list">
+                /match.jsp
+            </result>
+            <result name="add">
+                /addmatch.jsp
+            </result>
+        </action>
+         <action name="news_*" class="Action.NewsAction"  method="{1}">
+            <result name="list">
+                /news.jsp
+            </result>
+        </action>
+         <action name="team_*" class="Action.TeamAction" method="{1}">
+            <result name="list">
+                /team.jsp
+            </result>
+        </action>
     </package>
 </struts>

@@ -29,5 +29,14 @@ public class PlayerAction extends ActionSupport implements SessionAware,ServletR
     public void setServletRequest(HttpServletRequest request) {
         this.request=request;
     }
-    
+    public String edit(){
+    String name=request.getParameter("name");
+    String id=request.getParameter("id");
+    session.put("name", name);
+    session.put("id", id);
+        return "editsuccess";
+    }
+    public String list(){
+    return "list";
+    }
 }

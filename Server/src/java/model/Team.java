@@ -8,7 +8,6 @@ package model;
 
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -33,7 +32,12 @@ public class Team implements Serializable {
     private int goalCount;
     private int groupNo;
     private int missCount;
-
+ private String name;
+    private int score;
+    private int teamId;
+    private Competition competition;
+    private Match match;
+    private List<Player> players;
     public int getGoalCount() {
         return goalCount;
     }
@@ -110,10 +114,5 @@ public class Team implements Serializable {
     public void setPlayers(List<Player> players) {
         this.players = players;
     }
-    private String name;
-    private int score;
-    private int teamId;
-    private Competition competition;
-    private Match match;
-    private List<Player> players;
+   
 }
