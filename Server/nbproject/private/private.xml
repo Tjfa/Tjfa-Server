@@ -3,12 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/web/WEB-INF/web.xml</file>
-            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/src/java/struts.xml</file>
-            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/src/java/Action/PlayerAction.java</file>
+            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/src/java/model/NewsJson.java</file>
+            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/src/java/DAO/NewsDAO.java</file>
+            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/src/java/Action/NewsAction.java</file>
             <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/src/java/model/News.java</file>
-            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/web/index.jsp</file>
-            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/web/player.jsp</file>
+            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/test/TestJson.java</file>
+            <file>file:/E:/Users/CZM/Documents/GitHub/Tjfa-Server/Server/test/NewsJson.java</file>
         </group>
     </open-files>
 </project-private>

@@ -35,11 +35,16 @@
             <result name="list">
                 /news.jsp
             </result>
+              <result name="add">
+                /addnews.jsp
+            </result>
         </action>
          <action name="team_*" class="Action.TeamAction" method="{1}">
             <result name="list">
                 /team.jsp
             </result>
         </action>
+        <action name="newsjson_*" class="Action.NewsAction" method="{1}">
+    </action>
     </package>
 </struts>

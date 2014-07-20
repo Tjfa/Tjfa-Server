@@ -7,11 +7,11 @@
 package Service;
 
 import DAO.NewsDAO;
-import DAO.PlayerDAO;
+
 import java.util.List;
 import javax.annotation.Resource;
 import model.News;
-import model.Player;
+
 import org.springframework.stereotype.Component;
 
 /**
@@ -43,5 +43,11 @@ public class NewsService {
     }
     public List<News> getNews(){
     return dao.getNews();
+    }
+    public List<News> getLatest(int limit){
+    return dao.getLatest(limit);
+    }
+    public List<News> getLimitList(int id,int limit){
+    return dao.getLimitList(id, limit);
     }
 }

@@ -10,7 +10,7 @@
 <html>
     <link href="http://cdn.bootcss.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
 
-
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
 
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -87,35 +87,19 @@
     </script>
     <body>
         <s:property value="#session.date"/>
-        <form action="match_add">
+        <form action="news_add" method="post">
             <table class="table table-striped">
-                <tr><td> 比赛名:  <input type="text" name="name" placeholder="Text input"></td></tr>
-                <tr><td> 比赛时间：<input type="date" name="date"></td></tr>
-                <tr><td>   比赛队伍：<select name="teamA">
-                            <option value="1">队伍1</option>
-                            <option value="2">队伍2</option>
-                            <option value="3">队伍3</option>
-                            <option value="4">队伍4</option>
-                            <option value="5">队伍5</option>
-            </select>vs<select name="teamB">
-                            <option value="1">队伍1</option>
-                            <option value="2">队伍2</option>
-                            <option value="3">队伍3</option>
-                            <option value="4">队伍4</option>
-                            <option value="5">队伍5</option>
-                
-            </select></td></tr>
-          <tr><td>   比赛性质：<select name="type">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                
-            </select></td></tr>
-           <tr><td>  比分:<input type="number" name="scoreA">:<input type="number" name="scoreB"></td></tr>
+                <tr><td> 新闻标题  <input type="text" name="name" placeholder="Text input"></td></tr>
+                <tr><td> 新闻时间：<input type="date" name="date"></td></tr>
+                <tr><td>   新闻内容：<textarea class="form-control" rows="3" name="content"></textarea></td></tr>
+          
+          
            <tr><td> <input type="submit" value="添加" class="btn"></td></tr>
             </table>
         </form>
+        <%
+        out.println(session.getAttribute("name"));
+        out.println(session.getAttribute("content"));
+        %>
     </body>
 </html>

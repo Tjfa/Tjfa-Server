@@ -36,7 +36,7 @@ public class Team implements Serializable {
     private int score;
     private int teamId;
     private Competition competition;
-    private Match match;
+   
     private List<Player> players;
     public int getGoalCount() {
         return goalCount;
@@ -97,14 +97,7 @@ public class Team implements Serializable {
     }
 
     
-    @ManyToOne
-    public Match getMatch() {
-        return match;
-    }
-
-    public void setMatch(Match match) {
-        this.match = match;
-    }
+   
 
     @OneToMany(mappedBy = "team")
     public List<Player> getPlayers() {

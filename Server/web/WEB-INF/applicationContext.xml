@@ -23,7 +23,8 @@
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
  <context:annotation-config/>
-    <context:component-scan base-package="shopping"/>
+    <context:component-scan base-package="Service,DAO"/>
+   
     <aop:aspectj-autoproxy/>
       
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

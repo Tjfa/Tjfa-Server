@@ -40,12 +40,29 @@ public class Match implements Serializable {
     private int scoreB;
     private Team winTeam;
     private Competition competition;
-    private List<Team> teams;
+    private Team teamA;
+    private Team teamB;
     private int matchId;
 @Id
 @GeneratedValue
     public int getMatchId() {
         return matchId;
+    }
+
+    public Team getTeamA() {
+        return teamA;
+    }
+
+    public void setTeamA(Team teamA) {
+        this.teamA = teamA;
+    }
+
+    public Team getTeamB() {
+        return teamB;
+    }
+
+    public void setTeamB(Team teamB) {
+        this.teamB = teamB;
     }
 
     public void setMatchId(int matchId) {
@@ -113,12 +130,5 @@ public class Match implements Serializable {
     }
 
     
-    @OneToMany(mappedBy = "match")
-    public List<Team> getTeams() {
-        return teams;
-    }
-
-    public void setTeams(List<Team> teams) {
-        this.teams = teams;
-    }
+ 
 }

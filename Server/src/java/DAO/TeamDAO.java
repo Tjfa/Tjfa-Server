@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  *
  * @author CZM
  */
-@Component("playerDAO")
+@Component("teamDAO")
 public class TeamDAO {
 
     private HibernateTemplate hibernateTemplate;
