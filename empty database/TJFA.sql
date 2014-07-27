@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 26, 2014 at 04:58 PM
+-- Generation Time: Jul 27, 2014 at 05:05 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.9
 
@@ -53,6 +53,8 @@ CREATE TABLE IF NOT EXISTS `Match` (
   `competitionId` int(32) NOT NULL COMMENT '所属赛事的 id',
   `teamAId` int(32) NOT NULL COMMENT '参赛的第一支球队 对应scoreA',
   `teamBId` int(32) NOT NULL COMMENT '参赛的第二支球队 对应scoreB',
+  `penaltyA` int(32) NOT NULL COMMENT '点球大战a队得分',
+  `penaltyB` int(32) NOT NULL COMMENT '点球大战B队得分',
   PRIMARY KEY (`matchId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 
