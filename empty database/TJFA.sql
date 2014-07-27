@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 27, 2014 at 05:05 AM
+-- Generation Time: Jul 27, 2014 at 05:11 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.9
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `TJFA`
+-- Database: `TJFA_EMPTY`
 --
 
 -- --------------------------------------------------------
@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `Team` (
   `groupMissCount` int(32) NOT NULL COMMENT '小组赛失球',
   `goalCount` int(32) NOT NULL COMMENT '进球数',
   `missCount` int(32) NOT NULL COMMENT '失球数',
-  `groupNo` int(32) NOT NULL COMMENT '所在小组  a b c d ',
+  `groupNo` varchar(100) COLLATE utf8_bin NOT NULL COMMENT '所在小组  a b c d ',
   `name` varchar(400) COLLATE utf8_bin NOT NULL COMMENT '队伍名字',
   `score` int(32) NOT NULL COMMENT '小组赛积分 胜3 平1 输0',
   `competitionId` int(32) NOT NULL COMMENT '所属于的赛事 ',
