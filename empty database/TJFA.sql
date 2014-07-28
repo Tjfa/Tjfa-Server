@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 27, 2014 at 05:11 AM
+-- Generation Time: Jul 28, 2014 at 10:08 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.9
 
@@ -103,6 +103,11 @@ CREATE TABLE IF NOT EXISTS `Team` (
   `groupMissCount` int(32) NOT NULL COMMENT '小组赛失球',
   `goalCount` int(32) NOT NULL COMMENT '进球数',
   `missCount` int(32) NOT NULL COMMENT '失球数',
+  `groupWinCount` int(32) NOT NULL COMMENT '小组赛获胜场次',
+  `groupDrawCount` int(32) NOT NULL COMMENT '小组赛平局场次',
+  `groupLostCount` int(32) NOT NULL COMMENT '小组赛失利场次',
+  `winCount` int(32) NOT NULL COMMENT '总共获胜场次',
+  `lostCount` int(32) NOT NULL COMMENT '总共失利场次',
   `groupNo` varchar(100) COLLATE utf8_bin NOT NULL COMMENT '所在小组  a b c d ',
   `name` varchar(400) COLLATE utf8_bin NOT NULL COMMENT '队伍名字',
   `score` int(32) NOT NULL COMMENT '小组赛积分 胜3 平1 输0',
